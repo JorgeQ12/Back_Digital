@@ -84,7 +84,7 @@ namespace Back_Digital.Controllers
         // DELETE api/<Clientes_Bk>/5
         [HttpDelete("eliminarCliente/{id}")] //Eliminar Cliente
         public async Task<IActionResult> Delete(int id)
-        {
+        { 
             try
             {
                 var cliente = await _context.Clientes_Bk.FindAsync(id);
